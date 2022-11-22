@@ -1,0 +1,124 @@
+/* Marketing */
+
+:root {
+  --main-color: #fff;
+  --bg-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1520px;
+  background-color: var(--main-color);
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+/* .sub-title */
+.sub-title {
+  max-width: 100%; /*1920px-container*/
+  height: 320px;
+  background-image: url(../marketing_images/sub-tilte.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: calc(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-title p {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* news */
+/* lnb */
+#news .container .Lnb {
+  display: none;
+}
+
+/* menu */
+#news .container .menu {
+  border-top: 3px solid #a2c233;
+  display: inline-block;
+  margin-top: 65px;
+  margin-bottom: 35px;
+}
+
+#news .container .menu h1 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+/* section1 */
+#news .container .section1 ul li {
+  margin-bottom: 80px;
+}
+
+#news .container .section1 ul li img {
+  width: 100%;
+}
+
+/* news-box */
+#news .container .section1 ul .news h3 {
+  margin: 15px 0px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#news .container .section1 ul .news h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#news .container .section1 ul .news p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 15px 0px;
+}
+
+#news .container .section1 ul .news .news-date {
+  color: #666666;
+  font-size: 14px;
+}
+
+/* dial */
+
+#news .container .dial {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+#news .dial .numbers {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+#news .dial .numbers button {
+  color: #000;
+  background-color: transparent;
+  border: none;
+}
+
+#news .dial .numbers a {
+  color: #000;
+  margin-left: 28px;
+  margin-right: 26px;
+}
+
+#news .dial .numbers .leftMax {
+  margin-right: 26.5px;
+}
+
+#news .dial .numbers .left {
+  margin-right: 20px;
+}
+
+#news .dial .numbers .right {
+  margin-left: 20px;
+}
+
+#news .dial .numbers .rightMax {
+  margin-left: 26.5px;
+}

@@ -1,0 +1,497 @@
+/* header 박스 style 입니다. */
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* header 좌측 로고 style 입니다. */
+
+.logo a img {
+  width: 64px;
+  height: 28px;
+}
+
+.logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+/* header nav 입니다. */
+
+.header_nav {
+  display: none;
+}
+
+/* header 우측 ui style 입니다. */
+
+.header_ui {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.lang {
+  display: none;
+}
+
+.m_btn a {
+  display: flex;
+  align-items: center;
+}
+
+/* ========================================================================== */
+
+/* site_map 입니다. */
+
+.site_map {
+  display: none;
+}
+
+.site_map_open {
+  display: block;
+}
+
+/* site_map 의 상단입니다. */
+
+.site_map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.site_map_upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site_map_logo a img {
+  width: 64px;
+  height: 28px;
+}
+
+/* site_map 의 하단입니다. */
+
+.site_map_nav {
+  height: 100%;
+}
+
+.site_map_dep1_ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.site_map_dep1_li {
+  margin-top: 30px;
+  border-bottom: 1px solid #666;
+  position: relative;
+}
+/* 폰트 수정, 색상 변경 */
+.site_map_dep1_li > a {
+  font-size: 28px;
+  color: #000;
+}
+
+.site_map_dep1_li::after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  background: #a2c233;
+  position: absolute;
+  top: 40px;
+  transition: 0.5s;
+}
+
+.site_map_dep1_li:hover::after {
+  width: 105px;
+}
+
+.site_map_dep2_ul {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 5px;
+  transition: 1s;
+}
+
+.site_map_dep2_li {
+  margin-top: 20px;
+}
+/* 폰트 수정, 색상 변경 */
+.site_map_dep2_li > a {
+  font-size: 23px;
+  color: #444;
+}
+
+.site_map_dep1_li:hover > ul {
+  max-height: 260px;
+}
+
+/* ========================================================================== */
+
+/* main_bn css 입니다. */
+
+.main_bn {
+  height: 320px;
+  background-image: url(../images/main_bn_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.main_bn_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 320px;
+}
+
+.main_bn_title h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.main_bn_title h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: #fff;
+}
+
+.main_bn_title p {
+  width: 250px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.5rem;
+  margin-top: 30px;
+}
+
+/* about 입니다. */
+
+.about {
+  margin-top: 60px;
+}
+
+.about_bn {
+  height: 280px;
+  background-image: url(../images/about.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about_title {
+  font-size: 26px;
+  font-weight: 500;
+  border-top: 3px solid var(--green);
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+.about_contents {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.main_btn {
+  margin-top: 40px;
+}
+
+/* product 입니다. */
+
+.product {
+  /* height: 1563px; */
+  background: var(--bgc);
+  margin: 50px 0;
+  padding: 50px 0;
+}
+
+.product_title h3 {
+  font-size: 22px;
+  font-weight: 500;
+  border-top: 3px solid var(--green);
+  display: inline-block;
+}
+
+.product_title h1 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.product_contents {
+  margin-top: 30px;
+}
+
+.product_contents_img img {
+  width: 100%;
+}
+
+.product_contents_text h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.product_contents_text p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.product_contents_text_last p {
+  margin-bottom: 0px;
+}
+
+.product_contents_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* innovation 입니다. */
+
+.innovation {
+  width: 100%;
+  background-image: url(../images/innovation.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 80px;
+  padding-top: 57px;
+}
+
+.innovation_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.innovation_title {
+  height: 100%;
+  padding-bottom: 63px;
+}
+
+.innovation_title h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.innovation_title h1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 2rem;
+}
+
+.innovation_title p {
+  width: 230px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.innovation_btn {
+  margin-top: 30px;
+}
+
+.innovation_btn a {
+  width: 160px;
+  height: 50px;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.innovation_btn img {
+  width: 10px;
+}
+
+/* marketing 입니다. */
+
+.marketing_img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.marketing_title h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.marketing_title h1 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.marketing_title p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.marketing_btn {
+  margin-top: 40px;
+}
+
+/* recruit 입니다. */
+
+.recruit {
+  padding: 40px 0;
+  margin: 40px 0;
+  background: var(--bgc);
+}
+
+.recruit_contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.recruit_img {
+  order: 1;
+}
+
+.recruit_img img {
+  width: 100%;
+  object-fit: cover;
+}
+.recruit_title {
+  order: 2;
+}
+
+.recruit_title h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.recruit_title h1 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.recruit_title p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.recruit_btn {
+  margin-top: 40px;
+}
+
+/* contact 입니다. */
+
+.contact_contents {
+  width: 100%;
+}
+
+.contact_img iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.contact_title h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.contact_title h1 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.contact_title p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.contact_btn {
+  margin-top: 40px;
+}
+
+/* ========================================================================== */
+
+/* footer 박스의 style 입니다. */
+
+.footer {
+  margin-top: 100px;
+  height: 223px;
+  display: flex;
+  /* justify-content: space-between; */
+  border-top: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* footer 의 왼쪽 영역입니다. */
+
+.footer_left_upper a img {
+  display: none;
+}
+
+.footer_left_upper a {
+  color: #000;
+}
+
+.footer_left_info_1 p:first-child {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer_left_info_1 p:last-child {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.footer_left_info_2 {
+  margin-top: 30px;
+  font-size: 12px;
+  width: 80%;
+}
+
+/* footer 의 오른쪽 영역입니다. */
+
+.footer_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 21px;
+  width: 116px;
+}
+
+.sns_btn {
+  width: 170px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.family_site {
+  display: none;
+}

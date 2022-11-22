@@ -1,0 +1,252 @@
+/* sub_3_0.css */
+.sub_3 .sub_main_banner {
+  width: 100%;
+  height: 500px;
+}
+
+.sub_3 .sub_main_banner .container {
+  width: 100%;
+  height: 100%;
+  background-image: url(../product_images/sub-title_product.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub_3 .sub_main_banner .container h1 {
+  font-size: 80px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* sub_menu */
+
+.sub_3 .sub_menu {
+  margin: 25px auto 0;
+  max-width: 1520px;
+  padding-left: 20px;
+}
+
+.sub_3 .sub_menu p {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.sub_3 .sub_menu p:last-child {
+  color: #023586;
+}
+
+.sub_3 .sub_title {
+  max-width: 1520px;
+  margin: 160px auto 0;
+  width: 100%;
+}
+
+.sub_3 .sub_title h2 {
+  border-top: 2px solid #a2c233;
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 48px;
+  font-weight: 500;
+}
+.sub_3 .sub_title .container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sub_3 #kind {
+  margin: 0 auto;
+  width: 100%;
+  margin: 150px 0;
+}
+#kind .container {
+  margin: 0 auto;
+  max-width: 1520px;
+  height: 100%;
+}
+
+#kind .container form {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#kind .container .textbox {
+  margin: 0 auto;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #000;
+  margin-left: 12px;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+#kind .container .search {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-image: url(../product_images/sub3_search.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#kind .container ul {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+}
+
+#kind .container ul > li {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: calc((100% - 80px) / 4);
+  height: 100%;
+  border: 1px solid #000;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+#kind .container ul > li:hover {
+  background-color: #000;
+}
+
+#kind .container ul > li:hover > a {
+  color: white;
+}
+
+#kind .container ul > li > a {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+}
+
+.viewBox {
+  margin: 0 auto;
+  width: 100%;
+  height: 1350px;
+  background-color: #f7f7f7;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin-bottom: 100px;
+  /* outline: 1px solid red; */
+}
+
+.viewBox .container {
+  margin: 0 auto;
+  max-width: 1530px;
+  height: 100%;
+  /* height: 940px; */
+  position: relative;
+  overflow: hidden;
+  /* outline: 1px solid red; */
+}
+
+.viewBox .container > ul {
+  margin: 0 auto;
+  /* width: 80%; */
+  width: 100%;
+  padding: 0% 10%;
+  height: 400%;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  align-items:center;
+  flex-wrap: wrap;
+  /* outline: 1px solid blue; */
+
+}
+
+.viewBox .container ul > li {
+  margin: 0 auto;
+  width: 31.33%;
+  height: 450px;
+  /* margin-top: 100px; */
+  /* margin-bottom: 75px; */
+  /* outline: 1px solid blue; */
+}
+
+.viewBox .container ul > .all {
+  margin: 0 auto;
+  background: none;
+}
+
+.viewBox .container ul li > img {
+  margin: 0 auto;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.viewBox .container ul li > p {
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: 400;
+  color: #023586;
+}
+
+.viewBox .container ul li > h2 {
+  font-size: 27px;
+  margin-top: 18px;
+  font-weight: 400;
+}
+
+.dial {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 400px;
+}
+
+.dial .container {
+  margin: 0 auto;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.dial .container button {
+  margin: 0 auto;
+  width: 30px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.dial .container .numbers {
+  margin: 0 auto;
+  width: 200px;
+  height: 100%;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dial .container p {
+  margin: 0 auto;
+  width: 30px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dial .container .mobileP {
+  margin: 0 auto;
+  display: none;
+}
