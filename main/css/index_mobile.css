@@ -1,7 +1,7 @@
 /* header 박스 style 입니다. */
 
 .header {
-  height: 50px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
@@ -15,7 +15,7 @@
 }
 
 .logo {
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
 }
@@ -29,7 +29,7 @@
 /* header 우측 ui style 입니다. */
 
 .header_ui {
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
 }
@@ -114,6 +114,23 @@
 
 .site_map_dep1_li:hover::after {
   width: 105px;
+}
+
+.site_map_dep1_li::before {
+  content: "";
+  width: 20px;
+  height: 12px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  background-image: url(../images/site_map_drop_arrow.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.site_map_dep1_li:hover::before {
+  width: 0px;
 }
 
 .site_map_dep2_ul {

@@ -87,11 +87,11 @@ nav > ul {
   height: 90px;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .lang {
   height: 100%;
+  width: 80px;
 }
 
 .lang a {
@@ -100,6 +100,7 @@ nav > ul {
   margin-right: 45px;
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .lang a svg {
@@ -111,14 +112,19 @@ nav > ul {
   overflow: hidden;
   position: absolute;
   top: 100%;
+  left: -19%;
   background: #fff;
-  width: 40px;
-  text-align: left;
+  width: 80px;
+  text-align: center;
 }
 
 .lang a:hover ul {
   max-height: 200px;
   transition: 1s;
+}
+
+.lang a ul li {
+  margin: 10px 0;
 }
 
 .m_btn a {
