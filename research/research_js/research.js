@@ -1,40 +1,83 @@
-//sub_2_0.js
-
-let btnEl = document.querySelectorAll(".pop")[0];
-let paperEl = document.getElementById("paper");
-let closeEl = document.getElementsByTagName("button")[1];
-let imageEl = document.getElementsByClassName("images")[0];
-
-// btnEl.addEventListener('click',translat);
-
-// function translat() {
-//     paperEl.style.display='block'
-//     paperEl.style = {
-//         'height' : '500px'
-//     }
-// }
-
-let varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+let num = 0;
 
 if (screen.width < 768) {
-  btnEl.addEventListener("click", () => (paperEl.style.display = "block"));
-
-  closeEl.addEventListener("click", () => (paperEl.style.display = "none"));
-
-  let num = 0;
-  imageEl.addEventListener("click", translate);
-  function translate() {
-    num++;
-    let numb = num % 14;
-    $("#paper .images img").css({
-      display: "none",
-    });
-    $("#paper .images img").eq(numb).css({
+  $("#tech .pop").on("click", function () {
+    $("#paper").css({
       display: "block",
     });
-  }
+    $("#paper .images").css({
+      left: "0px",
+    });
+    $("#paper .images img").css({
+      opacity: "0",
+    });
+    $("#paper .images img").eq(0).css({
+      opacity: "1",
+    });
+  });
+  $("#paper .close").on("click", function () {
+    $("#paper").css({
+      display: "none",
+    });
+    num = 0;
+    console.log(num);
+  });
+  $("#paper .images").on("click", function () {
+    num++;
+    $("#paper .images img").css({
+      opacity: "0",
+    });
+    $("#paper .images img")
+      .eq(num % 14)
+      .css({
+        opacity: "1",
+      });
+  });
 } else if (screen.width > 768) {
-  btnEl.addEventListener("click", () => (paperEl.style.display = "block"));
-
-  closeEl.addEventListener("click", () => (paperEl.style.display = "none"));
+  $("#tech .pop").on("click", function () {
+    $("#paper").css({
+      display: "block",
+    });
+    $("#paper .images").css({
+      position: "absolute",
+      left: "0px",
+    });
+    console.log($("#paper .img_box .images").offset());
+  });
+  $("#paper .close").on("click", function () {
+    $("#paper").css({
+      display: "none",
+    });
+    num = 0;
+  });
+  $("#paper .images").css({
+    position: "absolute",
+    left: "0",
+  });
+  $("#paper .direc .left").on("click", function () {
+    console.log($("#paper .img_box .images").position().left);
+    if ($(".images").position().left > -10) {
+      alert("처음입니다.");
+    } else {
+      num++;
+      let numb = 485 * num;
+      $(".images").css({
+        position: "absolute",
+        left: `${numb}px`,
+      });
+    }
+  });
+  $("#paper .direc .right").on("click", function () {
+    console.log($("#paper .img_box .images").position().left);
+    if ($(".images").position().left < -4850) {
+      alert("마지막입니다.");
+    } else {
+      num--;
+      let numb = 485 * num;
+      $(".images").css({
+        position: "absolute",
+        left: `${numb}px`,
+      });
+    }
+  });
 }

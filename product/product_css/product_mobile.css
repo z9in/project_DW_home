@@ -29,6 +29,7 @@
   left: 0px;
   top: 120px;
   padding-left: 20px;
+  display: none;
 }
 
 .sub_3 .sub_menu > p {
@@ -42,7 +43,7 @@
 }
 
 .sub_3 .sub_title {
-  margin-top: 50px;
+  margin-top: 65px;
   height: 60px;
   position: relative;
   display: flex;
@@ -56,7 +57,7 @@
 }
 
 .sub_title .container h2 {
-  border-top: 2px solid #a2c233;
+  border-top: 3px solid #a2c233;
   display: inline-block;
 }
 
